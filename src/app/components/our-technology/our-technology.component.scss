@@ -1,0 +1,187 @@
+.fade-up{
+    transform:translateY(0);
+    opacity:1;
+}
+main{
+    width: 100%;
+    .wrapper{
+        max-width: 1224px;
+        margin: 0 auto;  
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        header {
+          width: 100%;
+          text-align: center;
+
+          h2 {
+            padding: 48px 0px 18px 0px;
+            letter-spacing: 0.7px;
+            text-align: center;    
+            transform:translateY(80px);
+            opacity:0;
+            transition: all 1s cubic-bezier(.57,0,.29,1.04);
+            &.fade-up{
+             transform:translateY(0);
+             opacity:1;
+            }
+          }
+
+          p {
+              width:605px;
+              margin:0 auto;
+              transform:translateY(80px);
+              opacity:0;
+              transition: all 1s 0.1s cubic-bezier(.57,0,.29,1.04);
+              &.fade-up{
+             transform:translateY(0);
+             opacity:1;
+            }
+            span {
+              font-size: 24px;
+              font-weight: bold;
+              color: #2196f3;
+            }
+          }
+
+          button {
+            color: #fff;
+            margin-top:32px;
+            transform:translateY(80px);
+            opacity:0;
+            transition: all 1s 0.17s cubic-bezier(.57,0,.29,1.04);
+            &.fade-up{
+             transform:translateY(0);
+             opacity:1;
+            }
+          }
+        }
+
+        section {
+          position: relative;
+          width: 100%;
+
+          .container {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding-bottom: 53px;
+
+            div {
+              img {
+                width: 189px;
+                height: 302px;
+                object-fit: contain;
+              }
+            }
+            .tech-cards{
+              transform:translateY(80px);
+              opacity:0;
+              transition: all 1s 0.17s cubic-bezier(.57,0,.29,1.04);
+              &.fade-up{
+              transform:translateY(0);
+              opacity:1;
+             }
+            }
+            .crypto {
+              text-align: center;
+              width: 293px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              img {
+                padding-bottom: 32px;
+              }
+
+              h6 {
+                width: fit-content;
+                padding-bottom: 16px;
+                font-family: ProximaNova;
+                font-size: 18px;
+                font-weight: 600;
+                color: #202124;
+              }
+
+              p {
+                font-family: ProximaNova;
+                font-size: 16px;
+                line-height: 1.56;
+                text-align: center;
+                color: #5f6368;
+              }
+            }
+
+            .incubator {
+              position: absolute;
+              top: 15%;
+              left: 30%;
+              transition: all 1s 0.2s cubic-bezier(.57,0,.29,1.04);
+
+              img {
+                width: 496px;
+                height: 443px;
+                object-fit: contain;
+              }
+            }
+
+            .data-path {
+              width: 300px;
+              text-align: center;
+              padding-left: 57px;
+            }
+          }
+
+          .user-interface {
+
+            width: 100%;
+
+            .interface {
+              display: flex;
+              width: 80%;
+              margin: 0 auto;
+              align-items: center;
+              justify-content: space-between;
+              padding-top: 16px;
+
+              .interface-header {
+                text-align: left;
+                transform:translateX(-60px);
+                opacity:0;
+                transition: all 1s 0.2s cubic-bezier(.57,0,.29,1.04);
+                &.fade-up{
+                transform:translateX(0);
+                opacity:1;
+               }
+
+                p {
+                  width: 441px;
+                  height: 98px;
+                  font-family: ProximaNova;
+                  font-size: 16px;
+                  font-weight: normal;
+                  font-stretch: normal;
+                  font-style: normal;
+                  line-height: 1.56;
+                  letter-spacing: normal;
+                  //color: #5f6368;
+                }
+              }
+
+              img {
+                width: 519px;
+                height: 366px;
+                object-fit: contain;
+                transform:translateX(60px);
+                opacity:0;
+                transition: all 1s 0.2s cubic-bezier(.57,0,.29,1.04);
+                &.fade-up{
+                transform:translateX(0);
+                opacity:1;
+               }
+              }
+            }
+          }
+        }
+    }
+}
